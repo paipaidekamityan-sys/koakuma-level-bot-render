@@ -1,0 +1,19 @@
+{
+  "name": "koakuma-level-bot-v2",
+  "version": "11.0.0",
+  "description": "Multi-server Discord level bot with Render free Web Service health endpoint and SQLite storage.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "register": "node src/register-commands.js",
+    "check": "node --check src/index.js && node --check src/register-commands.js"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "dependencies": {
+    "discord.js": "^14.21.0",
+    "dotenv": "^17.2.1"
+  }
+}

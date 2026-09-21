@@ -1,0 +1,19 @@
+{
+  "ticketName": "小悪魔チケット",
+  "chatXp": {
+    "min": 5,
+    "max": 10,
+    "cooldownSeconds": 60
+  },
+  "voiceXp": {
+    "intervalMinutes": 5,
+    "xpPerInterval": 10,
+    "minimumHumanMembers": 2,
+    "increaseEveryMinutes": 30,
+    "increaseAmount": 1,
+    "maxXpPerInterval": 20
+  },
+  "ticketExchange": {
+    "requiredTickets": 10
+  }
+}
