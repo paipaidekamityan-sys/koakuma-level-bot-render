@@ -837,7 +837,9 @@ console.log("Discordログイン開始");
 
 function loginBot() {
   console.log("client.login実行直前");
-  client.login(token).catch(e => {
+  client.login(token).then(() => {
+    console.log("client.login完了");
+  }).catch(e => {
     console.error("ログイン失敗:", e);
     process.exit(1);
   });
