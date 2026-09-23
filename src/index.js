@@ -836,6 +836,7 @@ healthServer.listen(HEALTH_PORT, "0.0.0.0", () => {
 console.log("Discordログイン開始");
 
 function loginBot() {
+  console.log("TOKEN確認:", !!token, "長さ:", token?.length);
   console.log("client.login実行直前");
   client.login(token).then(() => {
     console.log("client.login完了");
