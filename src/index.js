@@ -833,6 +833,8 @@ healthServer.listen(HEALTH_PORT, "0.0.0.0", () => {
   console.log(`Health server listening on port ${HEALTH_PORT}`);
 });
 
+console.log("Discordログイン開始");
+
 function loginBot() {
   client.login(token).catch(e => {
     console.error("ログイン失敗:", e);
