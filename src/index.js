@@ -836,6 +836,7 @@ healthServer.listen(HEALTH_PORT, "0.0.0.0", () => {
 console.log("Discordログイン開始");
 
 function loginBot() {
+  console.log("client.login実行直前");
   client.login(token).catch(e => {
     console.error("ログイン失敗:", e);
     process.exit(1);
