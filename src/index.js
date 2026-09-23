@@ -838,11 +838,17 @@ console.log("Discordログイン開始");
 function loginBot() {
   console.log("TOKEN確認:", !!token, "長さ:", token?.length);
   console.log("client.login実行直前");
-  client.login(token).then(() => {
+
+function loginBot() {
+  console.log("TOKEN確認:", !!token, "長さ:", token?.length);
+  console.log("client.login実行直前");
+  
+  client.login(token)
+    .then(() => {
     console.log("client.login完了");
-  }).catch(e => {
+  })
+    .catch(e => {
     console.error("ログイン失敗:", e);
-    process.exit(1);
   });
 }
 
